@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alumnos</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Alumnos</h1>
+    <div class="text-center">
+      <button class="btn btn-primary mr-2" onclick="mostrarAlumnos()">Mostrar Alumnos</button>
+      <button class="btn btn-success" onclick="agregarAlumno()">Agregar Alumno</button>
+    </div>
+    <table class="table mt-3">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Calificaciones</th>
+          <th>Promedio Individual</th>
+        </tr>
+      </thead>
+      <tbody id="alumnos-lista"></tbody>
+    </table>
+  </div>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
